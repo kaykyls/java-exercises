@@ -33,9 +33,11 @@ public class Array_01 {
             }
         }
 
-        System.out.print("Os nomes são: ");
+        System.out.println();
+
+        System.out.println("Os nomes dos aluno com a nota maior que a média são: ");
         for(int i = 0; i < nomesMaiorMedia.size(); i++) {
-            System.out.print(nomesMaiorMedia.get(i) + ", ");
+            System.out.println(nomesMaiorMedia.get(i));
         }
     }
 }
