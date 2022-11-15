@@ -27,15 +27,15 @@ public class Array_01 {
 
         media = total/notas.length;
 
+        System.out.println("A média da turma é: " + media);
+
         for(int i = 0; i < notas.length; i++) {
             if(notas[i] > media) {
                 nomesMaiorMedia.add(nomes[i]);
             }
         }
 
-        System.out.println();
-
-        System.out.println("Os nomes dos aluno com a nota maior que a média são: ");
+        System.out.println("Os nomes dos alunos com a nota maior que a média são: ");
         for(int i = 0; i < nomesMaiorMedia.size(); i++) {
             System.out.println(nomesMaiorMedia.get(i));
         }
