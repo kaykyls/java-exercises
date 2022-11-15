@@ -6,9 +6,9 @@ public class Carro {
     double capacidadeTanque;
     double velocidade;
     int ano;
-    private double velocidadeAnterior = 0;
+    double velocidadeAnterior = 0;
     double combustivelAtual = 0;
-    private boolean ligado = false;
+    boolean ligado = false;
 
     public void ligar() {
         System.out.println("Carro ligado!");

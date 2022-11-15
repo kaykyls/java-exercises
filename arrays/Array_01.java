@@ -9,7 +9,7 @@ public class Array_01 {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int[] notas = new int[5];
+        double[] notas = new double[5];
         int total = 0, media;
         String[] nomes = new String[5];
         ArrayList<String> nomesMaiorMedia = new ArrayList<>();
@@ -18,7 +18,7 @@ public class Array_01 {
             System.out.print("Insira o nome do " + (i+1) + "º aluno: ");
             nomes[i] = sc.nextLine();
             System.out.print("Insira a nota do " + (i+1) + "º aluno: ");
-            notas[i] = sc.nextInt();
+            notas[i] = sc.nextDouble();
 
             total += notas[i];
 

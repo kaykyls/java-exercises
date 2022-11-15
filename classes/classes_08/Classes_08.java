@@ -1,7 +1,5 @@
 package classes.classes_08;
 
-import java.util.Scanner;
-
 public class Classes_08 {
     public static void main(String[] args) {
         Motorista m1 = new Motorista();
