@@ -13,26 +13,25 @@ public class Array_04 {
         ArrayList salarios = new ArrayList<>();
         ArrayList salariosReajustados = new ArrayList<>();
 
-
         int i = 0;
 
-        System.out.print("Insira o 1º salário: ");
-        double verificarSalario = sc.nextInt();
-        while(verificarSalario >= 0) {
-            salarios.add(verificarSalario);
-
-            System.out.print("Insira o " + (i+2) + "º salário: ");
-            verificarSalario = sc.nextDouble();
-            i++;
+        while(true) {
+            System.out.print("Insira o " + (i+1) + "º salário: ");
+            double verificarSalario = sc.nextDouble();
+            if (verificarSalario >= 0) {
+                salarios.add(verificarSalario);
+                i++;
+            } else {
+                break;
+            }
         }
-
 
         System.out.print("Insira o valor do reajuste: ");
         double reajuste = sc.nextDouble();
 
         System.out.println("Salários reajustados:");
         for(i = 0; i < salarios.size(); i++) {
-            salariosReajustados.add((double)salarios.get(i)+ reajuste);
+            salariosReajustados.add((double)salarios.get(i) + (double)salarios.get(i) * (reajuste/100));
             System.out.println(salariosReajustados.get(i));
         }
     }
