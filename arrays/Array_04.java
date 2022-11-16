@@ -26,7 +26,7 @@ public class Array_04 {
             }
         }
 
-        System.out.print("Insira o valor do reajuste: ");
+        System.out.print("Insira a porcentagem do reajuste: ");
         double reajuste = sc.nextDouble();
 
         System.out.println("Salários reajustados:");
